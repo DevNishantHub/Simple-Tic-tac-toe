@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+</head>
+<body>
+    <style>
+        body{
+            place-items: center;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            column-gap: 3px;
+            row-gap: 3px;
+            padding-top: 10rem;
+        }
+        .cell{
+            background-color:#d4c1c1 ;   
+            border: none;
+            font-size:xx-large; 
+        }
+        .reset{
+            background-color:rgb(199, 226, 199) ;   
+            border: none;
+            border-radius: 7px;
+            font-size:xx-large;
+        }
+        .reset-div{
+            margin-top: 5rem;
+            align-content: center;
+        }
+        .Message{
+            font-size:40px;
+        }
+    </style>
+    <div class="grid">
+        <button class="cell" id="cell-id-1" onclick="shape(this.id)" data-index="0"></button>
+        <button class="cell" id="cell-id-2" onclick="shape(this.id)" data-index="1"></button>
+        <button class="cell" id="cell-id-3" onclick="shape(this.id)" data-index="2"></button>
+        <button class="cell" id="cell-id-4" onclick="shape(this.id)" data-index="3"></button>
+        <button class="cell" id="cell-id-5" onclick="shape(this.id)" data-index="4"></button>
+        <button class="cell" id="cell-id-6" onclick="shape(this.id)" data-index="5"></button>
+        <button class="cell" id="cell-id-7" onclick="shape(this.id)" data-index="6"></button>
+        <button class="cell" id="cell-id-8" onclick="shape(this.id)" data-index="7"></button>
+        <button class="cell" id="cell-id-9" onclick="shape(this.id)" data-index="8"></button>
+    </div>
+    <div>
+        <h1 class="Message" id="Win-msg">Game Running</h1>
+    </div>
+    <div class="reset-div">
+        <button class="reset" id="reset" onclick="reset()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
